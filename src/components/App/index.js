@@ -1,9 +1,9 @@
 import React from 'react';
 
+import Navbar from '~/containers/Navbar';
+
 const App = () => (
-  <div>
-    ok
-  </div>
+  <Navbar />
 );
 
 export default App;
