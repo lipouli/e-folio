@@ -1,7 +1,10 @@
+import projects from '~/data/projects';
 /**
  * État initial pour le state de l'application
  */
-const initialState = {};
+const initialState = {
+  projects,
+};
 
 /**
  * Reducer de l'application
