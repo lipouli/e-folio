@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 
-import reducer from './reducer';
+import reducers from './reducers';
 
 const devTools = [];
 
@@ -14,6 +14,6 @@ const middlewareEnhancer = applyMiddleware(...middlewares);
 
 const enhancers = compose(middlewareEnhancer, ...devTools);
 
-const store = createStore(reducer, enhancers);
+const store = createStore(reducers, enhancers);
 
 export default store;

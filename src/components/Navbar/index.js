@@ -1,8 +1,8 @@
 import React from 'react';
 
+import Menu from '~/containers/Navbar/Menu';
 import Nav from './Nav';
 import H1 from './H1';
-import Menu from './Menu';
 
 const Navbar = () => (
   <Nav>

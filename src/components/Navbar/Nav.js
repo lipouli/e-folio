@@ -10,4 +10,6 @@ export default styled.nav`
   padding: 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100vw;
 `;
