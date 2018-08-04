@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 
 import MenuDiv from './MenuDiv';
 import CenterDiv from './CenterDiv';
+import ArcMenu from './ArcMenu';
 
 const Menu = ({ closeMenu }) => (
   <MenuDiv onClick={closeMenu}>
     <CenterDiv>
-      Menu opened !!
+      <ArcMenu />
     </CenterDiv>
   </MenuDiv>
 );

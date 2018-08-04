@@ -10,7 +10,9 @@ L'application utilisera les librairie suivante:
   react-router pour les changement de page
   react-redux pour gérer le state
   emotion sera utilisé pour la mise en style des composants
-  fontawesome-svg-core, free-solid-svg-icons, react-fontawesome pour les icons fontawsome
+  fontawesome-svg-core, free-solid-svg-icons, react-fontawesome pour les icons fontawsome,
+  d3 pour la création des svg,
+  greensock pour gérer les animations,
 
 # Les pages
 L'application devra comporter:
@@ -38,6 +40,20 @@ __31/07/2018__
     - Création de l'animation hovered pour les éléments clickable avec _keyframes_ de _react-emotion_
     - Style du Navbar des éléments avec _styled_ de _react-emotion_
     
-__01/08/20018__
+__01/08/2018__
   - installation fontawesome-svg-core, free-solid-svg-icons, react-fontawesome.
   - ajout du menu de navigation dans le Navbar et création de l'animation.
+
+__02/08/2018__
+  -installation de d3 pour création svg du menu circulaire.
+  -mise en place du cercle du menu.
+
+__03/08/2018__
+  -installation de greensock pour animation.
+  -mise en place de l'animation du menu circulaire.
+
+__04/08/2018__
+  -séparation des éléments du menu du composant menu.
+  -installation de react-transition-group.
+  -création animation entrée et sortie du menu.
+  -création transition sur hover.
