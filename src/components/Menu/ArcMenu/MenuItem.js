@@ -9,6 +9,7 @@ import { activable, hover } from '~/styles/color';
 class MenuItem extends React.Component {
   state = {
     ref: React.createRef(),
+    hoverRef: React.createRef(),
     isOpen: false,
     timeout: this.props.delay / 1000 * this.props.index,
     hovered: false,
@@ -85,6 +86,13 @@ class MenuItem extends React.Component {
     });
   }
 
+  animeIcon = () => {
+    TweenMax.to(this.state.hoverRef.current, 0.1, {
+      rotation: 360,
+      transformOrigin: 'center center',
+    });
+  }
+
   render() {
     const {
       path,
@@ -94,7 +102,12 @@ class MenuItem extends React.Component {
     } = this.props;
     const labelPosX = labelPosition[0];
     const labelPosY = labelPosition[1];
-    const { ref, isOpen, hovered } = this.state;
+    const {
+      ref,
+      isOpen,
+      hovered,
+      hoverRef,
+    } = this.state;
     return (
       <Transition
         onEnter={this.onEnter}
@@ -112,14 +125,38 @@ class MenuItem extends React.Component {
           onMouseLeave={this.unHovered}
         >
           <path className="test" id={`${label}-path`} d={path} />
-          <FontAwesomeIcon
-            color={hovered ? hover : activable}
-            height="40"
-            width="40"
-            x={labelPosX - 20}
-            y={labelPosY - 20}
-            icon={icon}
-          />
+          <Transition
+            in={!hovered}
+            timeout={100}
+            unmountOnExit
+          >
+            <FontAwesomeIcon
+              color={hovered ? hover : activable}
+              height="40"
+              width="40"
+              x={labelPosX - 20}
+              y={labelPosY - 20}
+              icon={icon}
+            />
+          </Transition>
+          <Transition
+            in={hovered}
+            timeout={100}
+            unmountOnExit
+            exit
+            onEnter={this.animeIcon}
+            onExit={this.animeIcon}
+          >
+            <text
+              ref={hoverRef}
+              x={labelPosX}
+              y={labelPosY + 10}
+              fill={activable}
+              textAnchor="middle"
+            >
+              {label}
+            </text>
+          </Transition>
         </g>
       </Transition>
     );

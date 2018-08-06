@@ -3,6 +3,8 @@ import projects from '~/data/projects';
 import {
   OPEN_MENU,
   CLOSE_MENU,
+  SET_TOOLTIP,
+  UNSET_TOOLTIP,
 } from '~/store/actions/app';
 /**
  * État initial pour le state de l'application
@@ -10,6 +12,7 @@ import {
 const initialState = {
   projects,
   menuIsOpen: false,
+  tooltip: '',
 };
 
 /**
@@ -27,6 +30,18 @@ const appReducer = (currentState = initialState, action = {}) => {
       return {
         ...currentState,
         menuIsOpen: false,
+      };
+    }
+    case SET_TOOLTIP: {
+      return {
+        ...currentState,
+        tooltip: action.payload,
+      };
+    }
+    case UNSET_TOOLTIP: {
+      return {
+        ...currentState,
+        tooltip: '',
       };
     }
     default: return currentState;

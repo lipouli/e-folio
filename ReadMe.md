@@ -57,3 +57,9 @@ __04/08/2018__
   -installation de react-transition-group.
   -création animation entrée et sortie du menu.
   -création transition sur hover.
+
+__05/08/2018__
+  -installation de react-tooltip.
+
+__06/08/2018__
+  -Mise en place fonctionnalité de tooltip.

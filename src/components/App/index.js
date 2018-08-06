@@ -4,11 +4,11 @@ import { Transition } from 'react-transition-group';
 
 import Navbar from '~/components/Navbar';
 import Menu from '~/containers/Menu';
+import InfoMouse from '~/containers/InfoMouse';
 
 const App = ({ menuIsOpen }) => (
   <React.Fragment>
     <Navbar />
-    {/* { menuIsOpen && <Menu />} */}
     <Transition
       timeout={1500}
       in={menuIsOpen}
@@ -16,6 +16,7 @@ const App = ({ menuIsOpen }) => (
     >
       <Menu />
     </Transition>
+    <InfoMouse />
   </React.Fragment>
 );
 

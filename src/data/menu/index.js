@@ -2,7 +2,7 @@ import { faUser, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const menuList = [
   {
-    name: 'A propos de moi',
+    name: 'Moi',
     icon: faUser,
   },
   {
@@ -10,7 +10,7 @@ const menuList = [
     icon: faFolder,
   },
   {
-    name: 'Me contacter',
+    name: 'Contact',
     icon: faEnvelope,
   },
 ];
