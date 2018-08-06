@@ -5,6 +5,7 @@ import { Transition } from 'react-transition-group';
 import Navbar from '~/components/Navbar';
 import Menu from '~/containers/Menu';
 import InfoMouse from '~/containers/InfoMouse';
+import Pages from '~/components/Pages';
 
 const App = ({ menuIsOpen }) => (
   <React.Fragment>
@@ -16,6 +17,7 @@ const App = ({ menuIsOpen }) => (
     >
       <Menu />
     </Transition>
+    <Pages />
     <InfoMouse />
   </React.Fragment>
 );

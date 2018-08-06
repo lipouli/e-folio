@@ -11,5 +11,6 @@ export default styled.nav`
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 5;
   width: 100vw;
 `;

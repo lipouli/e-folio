@@ -1,8 +1,13 @@
 import React from 'react';
 
+import { Cite } from './styles';
+
 const App = () => (
   <div>
-    <h1>voici ma page perso</h1>
+    <p>voici ma page perso</p>
+    <p>faite entièrement avec React et son écosystème</p>
+    <p>Tooltip fait grace à : <Cite>'react-tooltip'</Cite></p>
+    <p>Style fait grace à : <Cite>'react-emotion'</Cite></p>
   </div>
 );
 

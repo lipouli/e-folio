@@ -7,11 +7,14 @@ const Tip = ({
   tooltip,
   setTooltip,
   unsetTooltip,
+  ...props
 }) => (
   <Component
+    {...props}
     data-tip
     data-for="global"
-    onMouseEnter={setTooltip(tooltip)}
+    onMouseOver={setTooltip(tooltip)}
+    onFocus={setTooltip(tooltip)}
     onMouseLeave={unsetTooltip}
   >
     {children}
