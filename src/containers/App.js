@@ -9,6 +9,10 @@ const mapStateToProps = state => ({
 const AppContainer = connect(
   mapStateToProps,
   null,
+  null,
+  {
+    pure: false,
+  },
 )(App);
 
 export default AppContainer;

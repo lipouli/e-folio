@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Transition } from 'react-transition-group';
+import { Route } from 'react-router-dom';
 
 import Navbar from '~/components/Navbar';
 import Menu from '~/containers/Menu';
@@ -17,7 +18,7 @@ const App = ({ menuIsOpen }) => (
     >
       <Menu />
     </Transition>
-    <Pages />
+    <Route component={Pages} />
     <InfoMouse />
   </React.Fragment>
 );
