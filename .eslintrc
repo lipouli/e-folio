@@ -12,7 +12,8 @@
     "react/jsx-filename-extension": "off",
     "react/forbid-prop-types": "off",
     "react/no-unescaped-entities": "off",
-    "react/no-did-update-set-state": "off"
+    "react/no-did-update-set-state": "off",
+    "max-len": "off"
   },
   "settings": {
     "import/resolver": {

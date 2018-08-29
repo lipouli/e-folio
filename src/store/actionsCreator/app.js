@@ -13,9 +13,10 @@ export const closeMenu = () => ({
   type: CLOSE_MENU,
 });
 
-export const setTooltip = payload => ({
+export const setTooltip = (tooltip, place) => ({
   type: SET_TOOLTIP,
-  payload,
+  tooltip,
+  place,
 });
 
 export const unsetTooltip = () => ({

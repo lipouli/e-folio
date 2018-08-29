@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Transition } from 'react-transition-group';
 import TweenMax from 'gsap/TweenMax';
 
+import Div from './Div';
+
 class TransitionRoute extends React.Component {
   state = {
     ref: React.createRef(),
@@ -37,9 +39,9 @@ class TransitionRoute extends React.Component {
         onExit={this.exitAnimation}
         {...props}
       >
-        <div ref={ref}>
+        <Div innerRef={ref}>
           <Component />
-        </div>
+        </Div>
       </Transition>
     );
   }

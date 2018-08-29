@@ -1,7 +1,7 @@
 import styled from 'react-emotion';
 
 const Div = styled.div`
-  padding-top: 80px;
+  overflow-y: scroll;
 `;
 
 export default Div;

@@ -6,8 +6,8 @@ import Tip from '~/components/InfoMouse/Tip';
 
 const mapDispatchToProps = dispatch => ({
   ...bindActionCreators({ unsetTooltip }, dispatch),
-  setTooltip: tooltip => () => {
-    dispatch(setTooltip(tooltip));
+  setTooltip: (tooltip, place) => () => {
+    dispatch(setTooltip(tooltip, place));
   },
 });
 

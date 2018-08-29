@@ -5,6 +5,7 @@ const Tip = ({
   component: Component,
   children,
   tooltip,
+  place,
   setTooltip,
   unsetTooltip,
   ...props
@@ -13,8 +14,8 @@ const Tip = ({
     {...props}
     data-tip
     data-for="global"
-    onMouseOver={setTooltip(tooltip)}
-    onFocus={setTooltip(tooltip)}
+    onMouseOver={setTooltip(tooltip, place)}
+    onFocus={setTooltip(tooltip, place)}
     onMouseLeave={unsetTooltip}
   >
     {children}
@@ -27,10 +28,12 @@ Tip.propTypes = {
   tooltip: PropTypes.string.isRequired,
   setTooltip: PropTypes.func.isRequired,
   unsetTooltip: PropTypes.func.isRequired,
+  place: PropTypes.string,
 };
 
 Tip.defaultProps = {
   children: null,
+  place: 'bottom',
 };
 
 export default Tip;

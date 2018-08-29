@@ -1,20 +1,22 @@
 import Me from '~/components/Pages/Me';
+import Realisations from '~/components/Pages/Realisations';
+import Contact from '~/components/Pages/Contact';
 
 const pagesList = [
   {
-    path: '/0',
+    path: '/me',
     component: Me,
-    name: 'Me1',
+    name: 'me',
   },
   {
-    path: '/1',
-    component: Me,
-    name: 'Me2',
+    path: '/realisations',
+    component: Realisations,
+    name: 'realisations',
   },
   {
-    path: '/2',
-    component: Me,
-    name: 'Me3',
+    path: '/contact',
+    component: Contact,
+    name: 'contact',
   },
 ];
 

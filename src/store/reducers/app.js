@@ -13,6 +13,7 @@ const initialState = {
   projects,
   menuIsOpen: false,
   tooltip: '',
+  place: 'bottom',
 };
 
 /**
@@ -35,13 +36,15 @@ const appReducer = (currentState = initialState, action = {}) => {
     case SET_TOOLTIP: {
       return {
         ...currentState,
-        tooltip: action.payload,
+        tooltip: action.tooltip,
+        place: action.place,
       };
     }
     case UNSET_TOOLTIP: {
       return {
         ...currentState,
         tooltip: '',
+        place: 'bottom',
       };
     }
     default: return currentState;

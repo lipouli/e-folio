@@ -1,4 +1,9 @@
-import { faUser, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUser,
+  faFolder,
+  faEnvelope,
+  faHome,
+} from '@fortawesome/free-solid-svg-icons';
 
 const menuList = [
   {
@@ -12,6 +17,10 @@ const menuList = [
   {
     name: 'Contact',
     icon: faEnvelope,
+  },
+  {
+    name: 'Home',
+    icon: faHome,
   },
 ];
 
