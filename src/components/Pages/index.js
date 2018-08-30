@@ -30,9 +30,6 @@ class Pages extends React.Component {
         >
           {this.getPages()}
         </TransitionGroup>
-        <Link to="/realisations" href="/realisations">
-          coucou
-        </Link>
       </React.Fragment>
     );
   }

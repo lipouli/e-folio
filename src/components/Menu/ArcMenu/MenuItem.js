@@ -5,6 +5,7 @@ import { Transition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { activable, hover } from '~/styles/color';
+import G from './G';
 
 class MenuItem extends React.Component {
   state = {
@@ -53,6 +54,7 @@ class MenuItem extends React.Component {
 
   clickHandler = (e) => {
     e.stopPropagation();
+    console.log(this.props);
   }
 
   delayedOpenning = () => {
@@ -123,6 +125,7 @@ class MenuItem extends React.Component {
           onClick={this.clickHandler}
           onMouseEnter={this.hovered}
           onMouseLeave={this.unHovered}
+          className={G}
         >
           <path className="test" id={`${label}-path`} d={path} />
           <Transition
@@ -171,6 +174,7 @@ MenuItem.propTypes = {
   delay: PropTypes.number.isRequired,
   labelPosition: PropTypes.array.isRequired,
   icon: PropTypes.object.isRequired,
+  refTo: PropTypes.string.isRequired,
 };
 
 MenuItem.defaultProps = {

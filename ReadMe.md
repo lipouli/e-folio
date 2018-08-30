@@ -66,4 +66,9 @@ __06/08/2018__
   - Mise en plade de _react-router-dom_ .
 
 __29/08/2018__
-  - Mse en place de la page _moi_.
+  - Mise en place de la page _moi_.
+
+__30/08/2018__
+  - Mise en placce description des réalisations.
+  - Installation _react-router-redux_ et _history_.
+  

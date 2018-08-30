@@ -8,18 +8,22 @@ import {
 const menuList = [
   {
     name: 'Moi',
+    path: 'moi',
     icon: faUser,
   },
   {
-    name: 'Réalisation',
+    name: 'Réalisations',
+    path: 'realisations',
     icon: faFolder,
   },
   {
     name: 'Contact',
+    path: 'contact',
     icon: faEnvelope,
   },
   {
     name: 'Home',
+    path: '',
     icon: faHome,
   },
 ];

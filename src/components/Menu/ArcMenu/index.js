@@ -56,6 +56,7 @@ class ArcMenu extends React.Component {
           key={arcPath.data.name}
           path={path}
           label={arcPath.data.name}
+          refTo={arcPath.data.path}
           index={arcPath.index}
           delay={delay}
           labelPosition={arcGenerator.centroid(param)}
