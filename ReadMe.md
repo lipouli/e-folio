@@ -45,22 +45,25 @@ __01/08/2018__
   - ajout du menu de navigation dans le Navbar et création de l'animation.
 
 __02/08/2018__
-  -installation de d3 pour création svg du menu circulaire.
-  -mise en place du cercle du menu.
+  - installation de d3 pour création svg du menu circulaire.
+  - mise en place du cercle du menu.
 
 __03/08/2018__
-  -installation de greensock pour animation.
-  -mise en place de l'animation du menu circulaire.
+  - installation de greensock pour animation.
+  - mise en place de l'animation du menu circulaire.
 
 __04/08/2018__
-  -séparation des éléments du menu du composant menu.
-  -installation de react-transition-group.
-  -création animation entrée et sortie du menu.
-  -création transition sur hover.
+  - séparation des éléments du menu du composant menu.
+  - installation de react-transition-group.
+  - création animation entrée et sortie du menu.
+  - création transition sur hover.
 
 __05/08/2018__
-  -installation de react-tooltip.
+  - installation de react-tooltip.
 
 __06/08/2018__
-  -Mise en place fonctionnalité de tooltip.
-  -Mise en plade de _react-router-dom_ .
+  - Mise en place fonctionnalité de tooltip.
+  - Mise en plade de _react-router-dom_ .
+
+__29/08/2018__
+  - Mse en place de la page _moi_.

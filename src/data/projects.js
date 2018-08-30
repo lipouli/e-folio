@@ -22,6 +22,20 @@ const projects = [
       ],
     },
   },
+  {
+    name: 'oquiz',
+    slug: 'oquiz',
+    date: new Date(2018, 4, 23),
+    info: {
+      description: 'évaluation back',
+      tag: [
+        javascript,
+        jquery,
+        html,
+        css,
+      ],
+    },
+  },
 ];
 
 export default projects;
