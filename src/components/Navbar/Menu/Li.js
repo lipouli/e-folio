@@ -7,6 +7,7 @@ export default styled.li`
   color: ${activable};
   animation: ${compass} 3s infinite linear;
   transition: 1s;
+  cursor: pointer;
   &:hover {
     animation-play-state: paused;
     color: ${hover};

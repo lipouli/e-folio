@@ -6,6 +6,7 @@ import hovered from '~/styles/animations/hovered';
 export default styled.li`
   color: ${activable};
   transition: 1s;
+  cursor: pointer;
   &:hover {
     color: ${hover};
     animation: ${hovered} 1s ease;
