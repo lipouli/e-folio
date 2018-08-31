@@ -54,7 +54,8 @@ class MenuItem extends React.Component {
 
   clickHandler = (e) => {
     e.stopPropagation();
-    console.log(this.props);
+    const { refTo, changePage } = this.props;
+    changePage(refTo);
   }
 
   delayedOpenning = () => {
@@ -175,6 +176,7 @@ MenuItem.propTypes = {
   labelPosition: PropTypes.array.isRequired,
   icon: PropTypes.object.isRequired,
   refTo: PropTypes.string.isRequired,
+  changePage: PropTypes.func.isRequired,
 };
 
 MenuItem.defaultProps = {

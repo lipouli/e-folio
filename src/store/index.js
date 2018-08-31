@@ -1,7 +1,9 @@
 import { createStore, compose, applyMiddleware } from 'redux';
+import { connectRouter, routerMiddleware } from 'connected-react-router';
+import { createBrowserHistory } from 'history';
 
 import reducers from './reducers';
-import { historyMiddleware } from './reducers/router';
+import appMiddleware from './middlewares/app';
 
 const devTools = [];
 
@@ -9,12 +11,14 @@ if (window.devToolsExtension) {
   devTools.push(window.devToolsExtension());
 }
 
-const middlewares = [historyMiddleware];
+export const history = createBrowserHistory();
 
-const middlewareEnhancer = applyMiddleware(...middlewares);
+const historyMiddleware = routerMiddleware(history);
+
+const middlewareEnhancer = applyMiddleware(historyMiddleware, appMiddleware);
 
 const enhancers = compose(middlewareEnhancer, ...devTools);
 
-const store = createStore(reducers, enhancers);
+const store = createStore(connectRouter(history)(reducers), enhancers);
 
 export default store;

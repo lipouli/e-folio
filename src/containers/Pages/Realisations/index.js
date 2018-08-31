@@ -9,7 +9,6 @@ const mapStateToProps = () => ({
 
 const RealisationsContainer = connect(
   mapStateToProps,
-  null,
 )(Realisations);
 
 export default RealisationsContainer;

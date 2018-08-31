@@ -4,9 +4,9 @@ import Contact from '~/components/Pages/Contact';
 
 const pagesList = [
   {
-    path: '/me',
+    path: '/moi',
     component: Me,
-    name: 'me',
+    name: 'moi',
   },
   {
     path: '/realisations',

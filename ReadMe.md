@@ -71,4 +71,9 @@ __29/08/2018__
 __30/08/2018__
   - Mise en placce description des réalisations.
   - Installation _react-router-redux_ et _history_.
+  - Désinstallation _react-router-redux_ obsolète, installation _connected-react-router_.
+
+__31/08/2018__
+  - Mise en place appMiddleware pour fermeture de l'arcMenu.
+  - Mise en place de changement de page par l'arcMenu.
   
