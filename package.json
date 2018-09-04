@@ -39,6 +39,7 @@
     "gsap": "^2.0.1",
     "history": "^4.7.2",
     "prop-types": "^15.6.1",
+    "query-string": "^6.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-emotion": "^9.2.6",

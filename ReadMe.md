@@ -76,4 +76,4 @@ __30/08/2018__
 __31/08/2018__
   - Mise en place appMiddleware pour fermeture de l'arcMenu.
   - Mise en place de changement de page par l'arcMenu.
-  
+  - Installation de _query-string_.
