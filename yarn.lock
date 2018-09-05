@@ -4705,6 +4705,10 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-component@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/react-component/-/react-component-0.0.0.tgz#4bece46dd1e85747e18ab4debc1095abf8357206"
+
 react-dom@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"

@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
+import queryString from 'query-string';
 
 import pagesList from '~/data/pages';
+import Project from '~/components/Project';
 import TransitionRoute from './TransitionRoute';
 import Div from './Div';
 
@@ -19,6 +21,8 @@ class Pages extends React.Component {
   }
 
   render() {
+    const parsedQueryString = queryString.parse(this.props.location.search);
+    const isProjects = parsedQueryString.projects;
     return (
       <React.Fragment>
         <TransitionGroup
@@ -29,6 +33,7 @@ class Pages extends React.Component {
         >
           {this.getPages()}
         </TransitionGroup>
+        { isProjects && <Project /> }
       </React.Fragment>
     );
   }
