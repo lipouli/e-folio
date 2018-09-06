@@ -5,13 +5,16 @@ import Container from './Container';
 import Div from './Div';
 import NoProject from './NoProject';
 
-const Project = ({ projectData }) => (
-  <Container>
-    <Div>
-      { !projectData ? <NoProject /> : <div>Project here !</div>}
-    </Div>
-  </Container>
-);
+const Project = ({ projectData }) => {
+  const { Component } = projectData;
+  return (
+    <Container>
+      <Div>
+        { !projectData ? <NoProject /> : <Component />}
+      </Div>
+    </Container>
+  );
+};
 
 Project.propTypes = {
   projectData: PropTypes.oneOfType([

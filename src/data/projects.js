@@ -8,6 +8,7 @@ import {
 import MemoryDescription from '~/projects/Memory/Description';
 import OquizDescription from '~/projects/Oquiz/Description';
 import OblogDescription from '~/projects/Oblog/Description';
+import OblogComponent from '~/projects/Oblog';
 
 const projects = [
   {
@@ -46,6 +47,7 @@ const projects = [
     slug: 'oblog',
     date: new Date(2018, 3, 16),
     description: OblogDescription,
+    Component: OblogComponent,
     info: {
       description: 'évaluation html/css O\'clock',
       tag: [

@@ -17,7 +17,7 @@ app.get(reactPath, (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
-app.get('/api/oblog', (req, res) => {
+app.get('/api/projects/oblog', (req, res) => {
   app.use(express.static('src/projects/Oblog/evaluation-html-css-lipouli'));
   res.sendFile(path.join(projectsPath, 'Oblog/evaluation-html-css-lipouli/html/index.html'));
 });

@@ -77,3 +77,8 @@ __31/08/2018__
   - Mise en place appMiddleware pour fermeture de l'arcMenu.
   - Mise en place de changement de page par l'arcMenu.
   - Installation de _query-string_.
+
+__06/09/2018__
+  - Configuration _express_ routage pages react base.
+  - Configuration _express_ routage page projet Oblog.
+  - Installation de _axios_ pour appel ajax afin de récupérer les projets.
