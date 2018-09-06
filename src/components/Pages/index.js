@@ -4,7 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import queryString from 'query-string';
 
 import pagesList from '~/data/pages';
-import Project from '~/components/Project';
+import Project from '~/containers/Project';
 import TransitionRoute from './TransitionRoute';
 import Div from './Div';
 
@@ -33,7 +33,7 @@ class Pages extends React.Component {
         >
           {this.getPages()}
         </TransitionGroup>
-        { isProjects && <Project /> }
+        { isProjects && <Project project={isProjects} /> }
       </React.Fragment>
     );
   }
