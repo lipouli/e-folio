@@ -9,6 +9,7 @@ import MemoryDescription from '~/projects/Memory/Description';
 import OquizDescription from '~/projects/Oquiz/Description';
 import OblogDescription from '~/projects/Oblog/Description';
 import OblogComponent from '~/projects/Oblog';
+import MemoryComponent from '~/projects/Memory';
 
 const projects = [
   {
@@ -16,6 +17,7 @@ const projects = [
     slug: 'memory',
     date: new Date(2018, 3, 16),
     description: MemoryDescription,
+    Component: MemoryComponent,
     info: {
       description: 'évaluation javascript O\'clock',
       tag: [

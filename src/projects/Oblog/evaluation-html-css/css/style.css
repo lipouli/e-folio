@@ -1,6 +1,6 @@
 
 body {
-  background-image: url(../images/background.png);
+  background-image: url(/oblog/images/background.png);
   font-family: 'Drive', sans-serif;
   color: #594a4a;
   /* on donne de l'espace en haut en mode petite taille */

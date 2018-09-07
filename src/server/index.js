@@ -18,8 +18,13 @@ app.get(reactPath, (req, res) => {
 });
 
 app.get('/api/projects/oblog', (req, res) => {
-  app.use(express.static('src/projects/Oblog/evaluation-html-css'));
+  app.use('/oblog', express.static('src/projects/Oblog/evaluation-html-css'));
   res.sendFile(path.join(projectsPath, 'Oblog/evaluation-html-css/html/index.html'));
+});
+
+app.get('/api/projects/memory', (req, res) => {
+  app.use('/memory', express.static('src/projects/Memory/evaluation-js-memory'));
+  res.sendFile(path.join(projectsPath, 'Memory/evaluation-js-memory/html/index.html'));
 });
 
 app.listen(3000, () => {

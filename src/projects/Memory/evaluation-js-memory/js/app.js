@@ -143,7 +143,7 @@ var app = {
       var divImage = $('<div>')
                       .addClass('image')
                       .css({
-                        'background-image': 'url(../images/cards.png)',
+                        'background-image': 'url(/memory/images/cards.png)',
                         'background-position' : `0 -${spriteIndex * 100}px`
                       });
       // création de l'élément div carte et ajout des enfants
