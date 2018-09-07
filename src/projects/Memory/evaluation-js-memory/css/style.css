@@ -1,0 +1,108 @@
+/* ----------------------header------------------------- */
+.memory-header {
+  height: 15vh;
+  background-color: #eeeeee;
+  display: flex;
+}
+.memory-header-title {
+  margin: auto;
+}
+/* -----------------------------main----------------------- */
+.memory-main {
+  display: flex;
+  /* centrage horizontal et vertical  */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  position: relative;
+}
+
+/* ---------------------------menu------------------ */
+#menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  top: 10%;
+}
+span {
+  text-align: center;
+  margin-top: 5px;
+}
+.score-item {
+  display: block;
+}
+#scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container-scores {
+  text-align: center;
+}
+
+
+/* ---------------------------plateau------------------ */
+#plateau {
+  /* on cahche le menu en attendant le vhoix du niveau */
+  visibility: hidden;
+  position: relative;
+  background-color: #dddcff;
+  display: grid;
+  /* configuration du gap entre les carte */
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  /* pour le contour */
+  padding: 1rem;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* pour un animation quand on retourne une carte */
+  transition: all 1s ease;
+}
+.cache, .image {
+  width: 100%;
+  height: 100%;
+  /* pour que les éléments de dos soient caché */
+  backface-visibility: hidden;
+  /* superposer les élément */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cache {
+  background-color: #aaaaaa;
+  /* dos de la carte */
+  transform: rotateY(180deg);
+}
+.cache:hover {
+  background-color: #6a6a6a;
+
+}
+.image {
+  background-color: white;
+  /* z-index: 2; */
+}
+.hidden {
+  transform: rotateY(180deg);
+}
+/* ---------------------------minuteur------------------ */
+#minuteur {
+  margin-top: 20px;
+  display: grid;
+  justify-content: flex-start;
+  width: 500px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.minuteur-item {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="memory-header">
+    <h1 class="memory-header-title">Jeu de mémoire</h1>
+  </header>
+  <main class="memory-main">
+    <div id="menu">
+      <span>choisissez le niveau de diffulté</span>
+      <button data-level="easy" class="menu-btn">easy</button>
+      <button data-level="hard" class="menu-btn">hard</button>
+      <span>Top 5 Scores :</span>
+      <div id="scores">
+        <div class="container-scores">
+          <span>easy</span>
+          <div id="scores-easy">
+
+          </div>
+        </div>
+        <div class="container-scores">
+          <span>hard</span>
+          <div id="scores-hard">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="plateau">
+
+    </div>
+    <div id="minuteur"></div>
+  </main>
+  <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="../js/app.js" charset="utf-8"></script>
+</body>
+</html>
