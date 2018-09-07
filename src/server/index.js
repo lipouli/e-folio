@@ -18,8 +18,8 @@ app.get(reactPath, (req, res) => {
 });
 
 app.get('/api/projects/oblog', (req, res) => {
-  app.use(express.static('src/projects/Oblog/evaluation-html-css-lipouli'));
-  res.sendFile(path.join(projectsPath, 'Oblog/evaluation-html-css-lipouli/html/index.html'));
+  app.use(express.static('src/projects/Oblog/evaluation-html-css'));
+  res.sendFile(path.join(projectsPath, 'Oblog/evaluation-html-css/html/index.html'));
 });
 
 app.listen(3000, () => {

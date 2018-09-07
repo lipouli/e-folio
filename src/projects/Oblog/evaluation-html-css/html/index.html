@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="blog-header">
+    <!-- logo de la page  -->
+    <img src="/images/logo.png" alt="logo" class="blog-header-logo">
+    <!-- navavec lien menant au différentes séction du site internet -->
+    <nav class="blog-header-nav">
+      <ul>
+        <li><a href="" class="hover-link">notre révolution</a></li>
+        <li><a href="" class="hover-link">partage de frais</a></li>
+        <li><a href="" class="hover-link">tarifs</a></li>
+        <li><a href="" class="active hover-link">blog</a></li>
+        <li><a href="" class="hover-link">contact</a></li>
+      </ul>
+    </nav>
+    <!-- ici on ajoute un h1 à la page pour la sémantique et pour pouvoir mettre les titre des articles en h1. Ce titre sera mis en display none afin de correspondre à la maquette. -->
+    <h1 class="blog-header-title">Blog</h1>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- balises article pour séparer les différente article de cette page -->
+    <article id="article1">
+        <!-- image de l'article: sera mis en bakcground dans la div en css car ne présentant pas d'intéret dans la sémantique de site -->
+        <div class="blog-article-picture"></div>
+        <!-- div contenant tout ce qui est en rapport à l'article en cours -->
+        <div class="blog-article-content">
+            <!-- partie où seront placé le contenue de l'article -->
+            <div class="blog-article-content-text">
+                <!-- le titre de l'article en h1 -->
+                <header class="blog-article-content-text-title">
+                  <h1>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</h1>
+                </header>
+                <!-- ici on utilise la balise time pour la sémantique . Cette date a été placée après le titre de l'article pour une meilleur séqmantique et une meilleur visivilité et compréhension pour les screen reader etc ... . Cette date sera placé avant le titre en css pour correspondre à la maquette-->
+                <time datetime="2013-07-21" class="blog-article-content-text-date">le 21 juillet 2013</time>
+                <!-- le contenue de l'article -->
+                <p class="blog-article-content-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime beatae quia voluptatem eos et animi eaque, quasi assumenda quam sit mollitia, dolorem molestiae sequi. Nam, alias labore temporibus deserunt! Ipsum, reiciendis voluptatum. Laudantium repellendus voluptatibus explicabo corporis, quia beatae voluptas necessitatibus quidem quos molestiae consectetur odio aliquid unde omnis debitis.</p>
+            </div>
+            <!-- ici le footer intégrera dans quelle catégorie apartient l'article ainsi que les lien ver facebook et twitter de l'auteur? -->
+            <footer class="blog-article-content-footer">
+                <!-- liste des catégories dont appartient l'article-->
+                <div class="blog-article-content-footer-categories">
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 3</a>
+                </div>
+                <!-- lien vers réseau social -->
+                <div class="blog-article-content-footer-social">
+                  <a href=""><img src="/images/facebook.png" alt="facebook" class="blog-article-content-footer-social-img hover-link"></a>
+                  <a href=""><img src="/images/twitter.png" alt="twitter" class="blog-article-content-footer-social-img hover-link"></a>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <article id="article2">
+        <div class="blog-article-picture"></div>
+        <div class="blog-article-content">
+            <div class="blog-article-content-text">
+                <header class="blog-article-content-text-title">
+                  <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                </header>
+                <time datetime="2013-07-15" class="blog-article-content-text-date">le 15 juillet 2013</time>
+                <p class="blog-article-content-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloribus quis laboriosam, saepe ducimus magnam dolore numquam. Alias nihil ab officia nulla nobis, dolorum accusamus perspiciatis quas dicta praesentium cupiditate fugit exercitationem ad in necessitatibus est, fuga tempora facilis repudiandae libero autem sunt tenetur perferendis. Dolorem saepe cumque quae fugiat? Quod facilis, consequuntur obcaecati, culpa quaerat laudantium soluta distinctio aspernatur!</p>
+            </div>
+            <footer class="blog-article-content-footer">
+                <div class="blog-article-content-footer-categories">
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 1</a>
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 2</a>
+                </div>
+                <div class="blog-article-content-footer-social">
+                  <a href=""><img src="/images/facebook.png" alt="facebook" class="blog-article-content-footer-social-img hover-link"></a>
+                  <a href=""><img src="/images/twitter.png" alt="twitter" class="blog-article-content-footer-social-img hover-link"></a>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <article id="article3">
+        <div class="blog-article-picture"></div>
+        <div class="blog-article-content">
+            <div class="blog-article-content-text">
+                  <header class="blog-article-content-text-title">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+                  </header>
+                <time datetime="2013-07-12" class="blog-article-content-text-date">le 12 juillet 2013</time>
+                <p class="blog-article-content-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolores iste sit commodi placeat nobis eligendi corrupti odit doloribus autem. Illo repudiandae, dolores dignissimos quod unde cumque qui ut non modi magnam aspernatur aliquid recusandae aperiam neque iure tenetur minus perferendis nisi, distinctio magni optio doloremque, ea amet officiis accusantium! Repellendus praesentium voluptates vero maxime dolorum esse earum, ad nostrum saepe autem sed ipsam, alias minima reprehenderit minus perferendis voluptatum modi mollitia porro eius doloribus quibusdam, quaerat!</p>
+            </div>
+            <footer class="blog-article-content-footer">
+                <div class="blog-article-content-footer-categories">
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 1</a>
+                </div>
+                <div class="blog-article-content-footer-social">
+                  <a href=""><img src="/images/facebook.png" alt="facebook" class="blog-article-content-footer-social-img hover-link"></a>
+                  <a href=""><img src="/images/twitter.png" alt="twitter" class="blog-article-content-footer-social-img hover-link"></a>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <article id="article4">
+        <div class="blog-article-picture"></div>
+        <div class="blog-article-content">
+            <div class="blog-article-content-text">
+                  <header class="blog-article-content-text-title">
+                    <h1>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</h1>
+                  </header>
+                <time datetime="2013-07-15" class="blog-article-content-text-date">le 15 juillet 2013</time>
+                <p class="blog-article-content-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime beatae quia voluptatem eos et animi eaque, quasi assumenda quam sit mollitia, dolorem molestiae sequi. Nam, alias labore temporibus deserunt! Ipsum, reiciendis voluptatum. Laudantium repellendus voluptatibus explicabo corporis, quia beatae voluptas necessitatibus quidem quos molestiae consectetur odio aliquid unde omnis debitis.</p>
+            </div>
+            <footer class="blog-article-content-footer">
+                <div class="blog-article-content-footer-categories">
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 1</a>
+                    <a href="" class="blog-article-content-footer-categories-item hover-link">catégorie 2</a>
+                </div>
+                <div class="blog-article-content-footer-social">
+                  <a href=""><img src="/images/facebook.png" alt="facebook" class="blog-article-content-footer-social-img hover-link"></a>
+                  <a href=""><img src="/images/twitter.png" alt="twitter" class="blog-article-content-footer-social-img hover-link"></a>
+                </div>
+            </footer>
+        </div>
+    </article>
+    <!-- nav pour les boutons précédent et suivant -->
+    <nav class="blog-pagenav">
+      <!-- ici l'on mettra juste de balise a que l'on stylisera avec du css-->
+      <a href="" class="blog-pagenav-button hover-link">precedent</a>
+      <a href="" class="blog-pagenav-button hover-link">suivant</a>
+    </nav>
+  </main>
+  <!-- footer -->
+  <footer class="blog-footer">
+    <div class="blog-footer-copy">
+      <!-- l'on utilise ici la balise small pour les mentions légales et copyright (html5)-->
+      <small class="blog-footer-copy-copyright">Wedrive - &copy; 2013 Tous droits réservés</small>
+      <small class="blog-footer-copy-agency">Design agence wype</small>
+    </div>
+    <!-- nav du footer -->
+    <nav class="blog-footer-nav">
+      <ul>
+        <li><a href="" class="blog-footer-nav-link hover-link">Mentions légales</a></li>
+        <li><a href="" class="blog-footer-nav-link hover-link">Conditions générales</a></li>
+        <li><a href="" class="blog-footer-nav-link hover-link">Presse</a></li>
+        <li><a href="" class="blog-footer-nav-link hover-link">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

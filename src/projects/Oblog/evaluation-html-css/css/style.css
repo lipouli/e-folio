@@ -1,0 +1,359 @@
+
+body {
+  background-image: url(../images/background.png);
+  font-family: 'Drive', sans-serif;
+  color: #594a4a;
+  /* on donne de l'espace en haut en mode petite taille */
+  padding-top: 5vh;
+}
+/* ----------------------header-------------------------- */
+.blog-header {
+  /* on fixe le header en haut de l'écran */
+  position: fixed;
+  width: 100%;
+  height: 8.75rem;
+  /* on remonte le header afin de cacher le menu */
+  top: -6.56rem;
+  left: 0;
+  transition: all 0.5s ease;
+}
+/* pour faire descendre le menu lors du hover ou du click */
+.blog-header:hover {
+  top: 0;
+}
+
+.blog-header-logo {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+.blog-header-nav {
+  /* marge a droite pour se mettre sur le coté droit du logo */
+  margin-left: 6.375rem;
+}
+.blog-header-nav ul {
+  /* margin mis à 0 pour éviter le décalage vers le bas du header */
+  margin: 0;
+  padding: 0;
+}
+.blog-header-nav ul li {
+  display: block;
+  margin: 0;
+}
+.blog-header-nav ul li a {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.5s ease;
+  color: inherit;
+  padding: 0.3rem 0.4rem;
+}
+/* on donne une transition à nos item qui peuvent etre hovered */
+.hover-link {
+  transition: all 1s ease;
+}
+.hover-link:hover, .blog-header-nav a.active {
+  color: white;
+  background-color: #635756;
+}
+/* on cache le h1 de la page pour être en bon terme avec la maquette */
+.blog-header-title {
+  display: none;
+}
+
+/* ----------------------------main--------------------------- */
+/* on défini la taille de main */
+
+main article {
+  width: 100%;
+  display: grid;
+  /* on met l'image de l'article sur un height de 10vh, auto pour le contenu de l'article afin qu'il puisse s'expendre en fonction de sa longueur du contenu */
+  grid-template-rows: 10vh auto;
+  border: solid transparent;
+  /* pour la bordure avec image sous l'article */
+  border-width: 0 0 0.7rem 0;
+  border-image-source: url("../images/pink-triangle.png");
+  border-image-slice: 0 0 100% 0;
+  border-image-repeat: round;
+  margin-bottom: 2.875rem;
+}
+
+main article:nth-child(even){
+  /* pour la bordure des articles paire */
+  border-image-source: url("../images/blue-triangle.png");
+}
+/* positionnement du background image des articles */
+.blog-article-picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 -1px 1rem rgba(0,0,0,0.5);
+
+}
+/* on définie ici la taille que prendra le content et le footer de l'article */
+.blog-article-content {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto;
+  padding-left: 5%;
+  padding-top: 3.5%;
+  padding-right: 3%;
+  box-shadow: 0 -1px 1rem rgba(0,0,0,0.5);
+}
+
+.blog-article-content-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+/* date de l'article */
+.blog-article-content-text-date {
+  /* on place la date avant le titre pour correspondre à la maquette */
+  order: -1;
+  text-align: right;
+  font-family: 'WeDrive', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+/* titre des article */
+.blog-article-content-text-title {
+  margin-top: 2rem;
+  padding-right: 5%;
+  margin-bottom: 0;
+}
+.blog-article-content-text-title h1 {
+  text-transform: uppercase;
+  line-height: 1.7rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0;
+}
+/* contenue des article */
+.blog-article-content-text-content {
+  font-family: 'WeDrive', sans-serif;
+  margin-top: 0;
+  line-height: 1.45rem;
+  font-size: 0.8rem;
+  color: #857b7b;
+  padding-right: 9%;
+}
+/* footer des article */
+.blog-article-content-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.9rem;
+  /* afin d'aligner les liens sociaux avec les catégories si trop de tag catégories. */
+  align-items: center;
+}
+.blog-article-content-footer-categories {
+  /* flex pour adapter la taille en fonction du nombre de tags */
+  display: flex;
+  /* on définie une largeur afin de ne pas empiéter sur les liens sociaux */
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* les tags catégories */
+.blog-article-content-footer-categories-item {
+  color: #837878;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'WeDrive', sans-serif;
+  font-size: 0.8rem;
+  background-color: #f9f8f8;
+  padding: 0.4rem 0.5rem;
+  margin-right: 1rem;
+}
+/* les liens social média */
+.blog-article-content-footer-social-img {
+  background-color: #e0dddd;
+  border-radius: 50%;
+}
+/* dans cette partie on définie les image de chaque article */
+#article1 div.blog-article-picture {
+  background-image: url(../images/src/photo1.jpg);
+}
+#article2 div.blog-article-picture {
+  background-image: url(../images/src/photo2.jpg);
+}
+#article3 div.blog-article-picture {
+  background-image: url(../images/src/photo3.jpg);
+}
+#article4 div.blog-article-picture {
+  background-image: url(../images/src/photo4.jpg);
+}
+/* bouton navigation page */
+.blog-pagenav {
+  text-align: center;
+}
+.blog-pagenav-button {
+  background-color: #a49c9a;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.1rem;
+  font-family: 'WeDrive', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0 0.2rem;
+}
+.blog-pagenav-button:hover {
+  background-color: #5a4a4a;
+}
+/* ----------------------footer----------------------- */
+.blog-footer {
+  border-top: 1px solid #c1c0be;
+  margin: 2.5rem auto;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+/* partie copyright */
+.blog-footer-copy {
+  font-family: 'WeDrive', sans-serif;
+  text-align: center;
+}
+.blog-footer-copy-copyright {
+  font-weight: 700;
+  display: block;
+}
+.blog-footer-copy-agency {
+  display: block;
+  font-size: 0.7rem;
+  color: #a19a98;
+}
+/* partie link */
+.blog-footer-nav {
+  /* pour afficher les lien avant le copyright */
+  order: -1;
+  margin-bottom: 0.5rem;
+}
+.blog-footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+.blog-footer-nav li {
+  display: inline;
+}
+.blog-footer-nav-link {
+  display: block;
+  text-decoration: none;
+  color: #6d6261;
+  font-family: 'WeDrive', sans-serif;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  /* ----------------------header-------------------------- */
+  body {
+    padding-top: 8rem;
+  }
+  .blog-header {
+    height: auto;
+    top: 0;
+  }
+  .blog-header-logo {
+    left: 3.75%;
+  }
+  .blog-header-nav {
+    margin-left: 0;
+    /* center les éléments de la nav */
+    text-align: center;
+  }
+  .blog-header-nav ul {
+    /* ajout d'un padding pour décaler la nav vers le bas */
+    padding: 1.50rem 0 0 0;
+  }
+  .blog-header-nav ul li {
+    /* display inline pour un alignement horizontal */
+    display: inline;
+    /* espacement entre les différent élément */
+    margin: 0 0.2rem;
+  }
+  .blog-header-nav ul li a {
+    display: inline;
+    background-color: rgba(117, 116, 116, 0.9);
+    border-radius: 0.1rem;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.5rem 0.6rem;
+  }
+  /* ----------------------footer----------------------- */
+  .blog-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .blog-footer-copy {
+    text-align: right;
+  }
+  .blog-footer-nav {
+    order: 0;
+  }
+  .blog-footer-nav ul {
+    display: block;
+  }
+
+  .blog-footer-nav-link {
+    display: inline;
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* ----------------------header-------------------------- */
+  body {
+    padding-top: 3rem;
+  }
+
+  .blog-header-nav ul li a {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: inherit;
+  }
+  /* ----------------------------main--------------------------- */
+  main, .blog-footer {
+    width: 67%;
+    margin: 3.50rem auto 0;
+  }
+  main article {
+    min-height: 29.75rem;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: none;
+  }
+
+  .blog-article-content {
+    grid-template-rows: 90% 10%;
+    padding-left: 10%;
+  }
+
+  .blog-article-content-text-title {
+    margin-top: 4rem;
+    padding-right: 20%;
+    margin-bottom: 0.4rem;
+  }
+
+  .blog-article-content-text-title h1 {
+    line-height: 1.6rem;
+  }
+
+  /* ----------------------footer----------------------- */
+  .blog-footer {
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-footer-copy {
+    text-align: right;
+  }
+
+  .blog-footer-nav-link {
+    margin-left: 1.5rem;
+  }
+}

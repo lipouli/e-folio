@@ -20,7 +20,7 @@ class Oblog extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize');
+    window.removeEventListener('resize', this.sizeIframe);
   }
 
   sizeIframe = () => {
