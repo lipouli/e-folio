@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Project from './Project';
+import Project from '~/containers/Pages/Realisations/Project';
 
 const Realisations = ({ projects }) => (
   <div className="section">

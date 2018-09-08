@@ -6,10 +6,10 @@ import Section from './Section';
 import dateCss from './date';
 import Span from './SpanDescription';
 
-const Project = ({ project }) => {
+const Project = ({ project, openProject }) => {
   const { description: Description } = project;
   return (
-    <Section>
+    <Section onClick={openProject(project.slug)}>
       <h1>
         {project.name} <Span>{project.info.description}</Span>
       </h1>
@@ -21,6 +21,7 @@ const Project = ({ project }) => {
 
 Project.propTypes = {
   project: PropTypes.object.isRequired,
+  openProject: PropTypes.func.isRequired,
 };
 
 export default Project;

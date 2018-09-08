@@ -3,6 +3,7 @@ import {
   CLOSE_MENU,
   SET_TOOLTIP,
   CLOSE_PROJECT,
+  OPEN_PROJECT,
   UNSET_TOOLTIP,
 } from '~/store/actions/app';
 
@@ -26,4 +27,9 @@ export const unsetTooltip = () => ({
 
 export const closeProject = () => ({
   type: CLOSE_PROJECT,
+});
+
+export const openProject = project => ({
+  type: OPEN_PROJECT,
+  project,
 });

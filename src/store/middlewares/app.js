@@ -2,7 +2,7 @@ import { closeMenu } from '~/store/actionsCreator/app';
 import { push } from 'connected-react-router';
 import queryString from 'query-string';
 
-import { CLOSE_PROJECT } from '~/store/actions/app';
+import { CLOSE_PROJECT, OPEN_PROJECT } from '~/store/actions/app';
 
 const appMiddleware = store => next => (action) => {
   switch (action.type) {
@@ -12,6 +12,14 @@ const appMiddleware = store => next => (action) => {
         store.dispatch(closeMenu());
       }
       next(action);
+      break;
+    }
+    case OPEN_PROJECT: {
+      const { router: { location: { pathname, search } } } = store.getState();
+      const parse = queryString.parse(search);
+      const newQuery = { ...parse, projects: action.project };
+      const stringyfiedNewQuery = queryString.stringify(newQuery);
+      store.dispatch(push(`${pathname}?${stringyfiedNewQuery}`));
       break;
     }
     case CLOSE_PROJECT: {
