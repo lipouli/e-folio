@@ -12,8 +12,8 @@ class Application {
   public function __construct() {
     $this->router = new AltoRouter();
     // Récupération du base path définie par le htaccess
-    $basePath = isset($_SERVER['BASE_URI']) ? $_SERVER['BASE_URI'] : '';
-    $this->router->setBasePath($basePath);
+    // $basePath = isset($_SERVER['BASE_URI']) ? $_SERVER['BASE_URI'] : '';
+    // $this->router->setBasePath($basePath);
     // Appelle de la méthode pour définition des routes
     $this->setRoute();
 

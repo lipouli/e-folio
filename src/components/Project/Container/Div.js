@@ -5,7 +5,7 @@ const ContainerProjectDiv = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
-  background-color: black;
+  background-color: white;
   z-index: 6;
   border: 1px solid red;
   position: fixed;

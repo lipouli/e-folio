@@ -95,3 +95,4 @@ __08/09/2018__
 
 __09/09/2018__
   - Ajout variable REQUEST_URI pour altorouter.
+  - Installation _body-parser_ et de _multer_ pour express.

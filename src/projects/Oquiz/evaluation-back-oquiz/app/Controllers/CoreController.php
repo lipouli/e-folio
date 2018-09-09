@@ -15,6 +15,8 @@ abstract class CoreController {
     // création d'une instance de plates
     $this->templates = new Engine(ABS_BASE_PATH.'/app/Views');
     // on fourni à plates le router pour la génération des url
+    $baseUri = $_SERVER['BASE_URI'] ?: '';
+    $this->router->setBasePath($baseUri);
     $this->templates->addData(array(
       'router' => $router,
       'basePath' => '/oquiz',

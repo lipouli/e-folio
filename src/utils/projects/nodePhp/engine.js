@@ -11,6 +11,7 @@ var engine = function (filePath, opts, callback) {
         method = opts.method || 'GET',
         get = opts.get || {},
         post = opts.post || {},
+        requestUri = opts.requestUri,
         baseUri = opts.baseUri,
 
         query = opts.query || querystring.stringify(get),
@@ -20,9 +21,9 @@ var engine = function (filePath, opts, callback) {
             REQUEST_METHOD: method,
             CONTENT_LENGTH: body.length,
             QUERY_STRING: query,
-            REQUEST_URI: baseUri,
+            REQUEST_URI: requestUri,
+            BASE_URI: baseUri,
         };
-    console.log('base uri', baseUri);
     var command = util.format(
         '%s %s %s %s',
         (body ? util.format('echo "%s" | ', body) : '') + binPath,
