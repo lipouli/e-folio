@@ -82,3 +82,16 @@ __06/09/2018__
   - Configuration _express_ routage pages react base.
   - Configuration _express_ routage page projet Oblog.
   - Installation de _axios_ pour appel ajax afin de récupérer les projets.
+
+__07/09/2018__
+  - Mise en place du projet Oblog.
+  - Mise en place du project Memory.
+  - Configuration _express_ pour différent assets selon le projet.
+
+__08/09/2018__
+  - Mise en place système ouverture des projets.
+  - Installation _php-express_ pour rendu des page php.
+  - Modification de _php-express_ pour adaptation model MVC.
+
+__09/09/2018__
+  - Ajout variable REQUEST_URI pour altorouter.

@@ -1,0 +1,19 @@
+{
+    "name": "lipou/evaluation-back-oquiz-lipouli",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^4.0",
+        "altorouter/altorouter": "^1.2",
+        "league/plates": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "lipouli",
+            "email": "li.lipou@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"oquiz\\": "app/"}
+    }
+}

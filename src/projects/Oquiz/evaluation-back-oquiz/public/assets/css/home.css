@@ -1,0 +1,38 @@
+/* titre */
+.home-title h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.home-title p {
+  font-size: 0.9rem;
+}
+/* list des quiz */
+.quizzes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+.quiz-card {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+.quiz-card:hover {
+  border-color: #dedede;
+}
+.quiz-card * {
+  margin: 0.4rem 0;
+}
+.quiz-card h3 a {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 1.5rem;
+}
+.quiz-card h4 {
+  color: #333333;
+}
+.quiz-card cite {
+  font-style: normal;
+  font-size: 0.8rem;
+}

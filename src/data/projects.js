@@ -10,6 +10,7 @@ import OquizDescription from '~/projects/Oquiz/Description';
 import OblogDescription from '~/projects/Oblog/Description';
 import OblogComponent from '~/projects/Oblog';
 import MemoryComponent from '~/projects/Memory';
+import OquizComponent from '~/projects/Oquiz';
 
 const projects = [
   {
@@ -34,6 +35,7 @@ const projects = [
     slug: 'oquiz',
     date: new Date(2018, 4, 23),
     description: OquizDescription,
+    Component: OquizComponent,
     info: {
       description: 'évaluation back O\'clock',
       tag: [

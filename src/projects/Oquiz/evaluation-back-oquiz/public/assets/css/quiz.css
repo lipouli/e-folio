@@ -1,0 +1,111 @@
+/* le quiz */
+.quiz-title {
+  padding-bottom: 1.5rem;
+}
+.quiz-title h2 {
+  display: flex;
+  align-items: center;
+}
+.quiz-title h3 {
+  margin-bottom: 0.5rem;
+}
+.quiz-title cite {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+.quiz-count-question {
+  font-size: 0.8rem;
+  background-color: #777777;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.3rem;
+  margin-left: 0.5rem;
+}
+/* les questions */
+.questions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  align-items: start;
+}
+
+.question-card {
+  border: 1px solid #dedede;
+  border-radius: 0.2rem;
+}
+.question-card-header {
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+.question-level {
+  float: right;
+  padding: 0 0.5rem;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.question-card h4 {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
+.no-style-list {
+  list-style-type: none;
+}
+.form-submit {
+  grid-column: 1 / -1;
+  background-color: #337ab7;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.correct {
+  background-color: #c8f0b8;
+}
+
+.not-correct {
+  background-color: #fcd280;
+}
+/* div info */
+.question-info {
+  background-color: #e3e3e3;
+  padding: 1rem;
+}
+
+.question-info p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.question-info-wiki {
+  text-decoration: none;
+  color: blue;
+}
+/* div score */
+.score {
+  background-color: #c8f0b8;
+  color: #3c763d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.score p {
+  margin: 0;
+}
+.score a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.hidden {
+  display: none;
+}
+/* pour le bouton submit */
+.rejouer {
+  background-color: #5cb85c;
+}

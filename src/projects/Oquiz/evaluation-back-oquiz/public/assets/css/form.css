@@ -1,0 +1,50 @@
+
+.form {
+  padding-top: 2rem;
+  width: 300px;
+  display: grid;
+  margin: auto;
+  grid-row-gap: 0.5rem;
+}
+.form input[type='submit']{
+  justify-self: end;
+}
+
+/* animation pour affichage div erreur */
+@keyframes error {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+/* style div message d'erreur */
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-animation: error;
+  animation: error;
+  animation-duration: 0.2s;
+  transition: all 0.5s ease;
+}
+/* style message d'erreur */
+.error-item {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #721c24;
+}
+/* pour faire disparaitre la div d'erreurs */
+.trash {
+  top: -10px;
+  opacity: 0;
+}
