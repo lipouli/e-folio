@@ -16,7 +16,6 @@ class Application {
     // $this->router->setBasePath($basePath);
     // Appelle de la méthode pour définition des routes
     $this->setRoute();
-
   }
 
   // Définition des routes pour altorouter

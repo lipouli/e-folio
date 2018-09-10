@@ -96,3 +96,8 @@ __08/09/2018__
 __09/09/2018__
   - Ajout variable REQUEST_URI pour altorouter.
   - Installation _body-parser_ et de _multer_ pour express.
+  - installation _cookie-parser_.
+
+__10/09/2018__
+  - Adaptation oquiz au server express.
+  - Mise en place systeme de cookie dans express pour remplacer la session de oquiz.

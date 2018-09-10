@@ -16,6 +16,9 @@ var form = {
     console.log(response);
     if (response.success) {
       // redirection en cas de success
+      if (response.type === 'login') {
+        var loginResponse = await form.ajaxPost('/api/utils/oquiz/login', {user: response.user});
+      }
       window.location.href = response.url;
     } else {
       // affichage des erreurs

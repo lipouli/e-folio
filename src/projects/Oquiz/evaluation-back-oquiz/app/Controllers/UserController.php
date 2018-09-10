@@ -44,10 +44,14 @@ class UserController extends CoreController {
     }
     // préparation de la réponse au client
     $success = (count($errorList)) ? false : true;
+    $serializeUser = serialize(User::getUser());
+    $jsonUser = json_encode($serializeUser);
     $response = [
       'success' => $success,
       'errorList' => $errorList,
-      'url' => $this->router->generate('main_home')
+      'type' => 'login',
+      'url' => $this->router->generate('main_home'),
+      'user' => $jsonUser,
     ];
     $this->sendJSON($response);
   }

@@ -112,6 +112,7 @@ class QuizController extends CoreController {
       $success = count($errorList) ? false : true;
       $response = array(
         'success' => $success,
+        'type' => 'create_quizz',
         'errorList' => $errorList,
         'url' => $this->router->generate('quiz_quiz', array('id' => $quizModel->getId())),
       );

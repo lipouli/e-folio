@@ -13,6 +13,7 @@ var engine = function (filePath, opts, callback) {
         post = opts.post || {},
         requestUri = opts.requestUri,
         baseUri = opts.baseUri,
+        user = opts.user,
 
         query = opts.query || querystring.stringify(get),
         body = opts.body || querystring.stringify(post),
@@ -23,6 +24,7 @@ var engine = function (filePath, opts, callback) {
             QUERY_STRING: query,
             REQUEST_URI: requestUri,
             BASE_URI: baseUri,
+            user,
         };
     var command = util.format(
         '%s %s %s %s',

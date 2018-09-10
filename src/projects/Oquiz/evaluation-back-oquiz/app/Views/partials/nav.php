@@ -1,6 +1,5 @@
 <!-- nav du header selon que l'utilisateur soit conecté ou non -->
 <nav class="header-nav">
-
 <?php if($connectedUser): ?>
 
   <li>
@@ -16,7 +15,7 @@
     <a class="hover" href="<?=$router->generate('quiz_create') ?>"><i class="fas fa-plus-square"></i>Créer quiz</a>
   </li>
   <li>
-    <a class="hover" href="<?= $router->generate('user_logout') ?>"><i class="fas fa-sign-out-alt"></i>Deconnexion</a>
+    <a class="hover" href="/api/utils/oquiz/logout"><i class="fas fa-sign-out-alt"></i>Deconnexion</a>
   </li>
 
 <?php else: ?>

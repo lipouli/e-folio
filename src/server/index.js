@@ -5,6 +5,7 @@ const nodePhp = require('../utils/projects/nodePhp')({
 const path = require('path');
 const bodyParser = require('body-parser');
 const multer = require('multer');
+const cookieParser = require('cookie-parser');
 
 const upload = multer();
 const basePath = path.join(__dirname, '../..');
@@ -19,6 +20,7 @@ const reactPath = [
 app.use(express.static('dist'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 app.get(reactPath, (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
@@ -43,8 +45,21 @@ app.use('/api/projects/oquiz', upload.array(), (req, res) => {
   const params = {
     requestUri,
     baseUri: req.baseUrl,
+    user: req.cookies.user ? req.cookies.user : false,
   };
   nodePhp.router('index.php', params, req, res);
+});
+
+app.post('/api/utils/oquiz/login', (req, res) => {
+  res.cookie('user', req.body.user);
+  res.json({
+    sucess: true,
+  });
+});
+
+app.get('/api/utils/oquiz/logout', (req, res) => {
+  res.clearCookie('user');
+  res.redirect('/api/projects/oquiz');
 });
 
 app.listen(3000, () => {

@@ -17,6 +17,7 @@ abstract class CoreController {
     // on fourni à plates le router pour la génération des url
     $baseUri = $_SERVER['BASE_URI'] ?: '';
     $this->router->setBasePath($baseUri);
+
     $this->templates->addData(array(
       'router' => $router,
       'basePath' => '/oquiz',
