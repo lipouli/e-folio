@@ -101,3 +101,6 @@ __09/09/2018__
 __10/09/2018__
   - Adaptation oquiz au server express.
   - Mise en place systeme de cookie dans express pour remplacer la session de oquiz.
+
+__11/09/2018__
+  - Ajout animation ouverture et fermeture des projets.

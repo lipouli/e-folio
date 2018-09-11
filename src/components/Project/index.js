@@ -8,7 +8,7 @@ import NoProject from './NoProject';
 const Project = ({ projectData }) => {
   const { Component } = projectData;
   return (
-    <Container>
+    <Container isProjectOpen={projectData && true} >
       <Div>
         { !projectData ? <NoProject /> : <Component />}
       </Div>

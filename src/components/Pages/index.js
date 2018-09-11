@@ -33,7 +33,7 @@ class Pages extends React.Component {
         >
           {this.getPages()}
         </TransitionGroup>
-        { isProjects && <Project project={isProjects} /> }
+        <Project project={isProjects} />
       </React.Fragment>
     );
   }

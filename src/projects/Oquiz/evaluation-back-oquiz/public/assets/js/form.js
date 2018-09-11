@@ -9,11 +9,9 @@ var form = {
     // récupération des données du formulaire
     let dataJson = $(this).serialize();
     // Récupération du lien ou doit etre envoyer le formulaire
-    console.log(dataJson);
     let url = $(this).attr('action');
     // récupération des données renvoyées par le server
     let response = await form.ajaxPost(url, dataJson);
-    console.log(response);
     if (response.success) {
       // redirection en cas de success
       if (response.type === 'login') {
