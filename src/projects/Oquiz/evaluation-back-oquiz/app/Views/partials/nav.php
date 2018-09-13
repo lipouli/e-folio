@@ -27,7 +27,7 @@
     <a class="hover" href="<?= $router->generate('user_signin') ?>"><i class="fas fa-sign-in-alt"></i>Connection</a>
   </li>
   <li>
-    <a class="hover" href=""><i class="far fa-edit"></i>Inscription</a>
+    <a class="hover"><i class="far fa-edit"></i>Inscription</a>
   </li>
 
 <?php endif; ?>
