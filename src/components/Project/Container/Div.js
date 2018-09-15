@@ -7,7 +7,6 @@ const ContainerProjectDiv = styled.div`
   grid-template-rows: auto 1fr;
   background-color: white;
   z-index: 6;
-  border: 1px solid red;
   position: fixed;
   color: white;
 `;
