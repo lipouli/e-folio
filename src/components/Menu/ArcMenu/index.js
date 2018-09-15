@@ -1,8 +1,8 @@
 import React from 'react';
 import { arc, pie } from 'd3';
+import PropTypes from 'prop-types';
 
 import MenuItem from '~/containers/Menu/ArcMenu/MenuItem';
-import menuList from '~/data/menu';
 
 class ArcMenu extends React.Component {
   state = {
@@ -22,6 +22,7 @@ class ArcMenu extends React.Component {
   }
 
   getArcData = () => {
+    const { menuList } = this.props;
     const pieGenerator = pie();
     const data = menuList;
     const arcs = pieGenerator.value(() => 1)(data);
@@ -77,5 +78,9 @@ class ArcMenu extends React.Component {
     );
   }
 }
+
+ArcMenu.propTypes = {
+  menuList: PropTypes.array.isRequired,
+};
 
 export default ArcMenu;
