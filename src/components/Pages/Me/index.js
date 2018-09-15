@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Ul from './Ul';
+
 const Me = () => (
   <React.Fragment>
     <div className="section">
@@ -10,23 +12,29 @@ const Me = () => (
     </div>
     <div className="section">
       <h2>Formation</h2>
-      <ul>
+      <Ul>
         <li>
-          2004 - DEUG MIAS
-        </li>
-        <li>
-          2008 - Licence LLCE spécialité Chinois
-        </li>
-        <li>
-          2009 - Master LLCE spécialité Chinois
+          2018 - Développeur web et web mobile
+          <p>Formation télé-présentiel chez O'clock de 700h sur 5 mois</p>
+          <p><span>3 mois de socle</span> : html/css/javascript/php</p>
+          <p><span>1 mois de spécialisation</span> : Spécialité choisie : React / javascript</p>
+          <p><span>1 mois de projet</span>: Click and send</p>
+          <p><span>Certification de fin de formation</span>: titre Développeur web et web mobile, Niveau III (bac +2) en cours</p>
+          <p><span>Score Opquast</span>: 925/1000 (niveau expert)</p>
         </li>
         <li>
           2017 - Auto-didacte dans le domaine du développement web: html, css, js ,php, symfony, react, mysql, node.
         </li>
         <li>
-          2018 - Formation développeur web avec l'école O'clock, spécialité front-end avec la librairie React.
+          2009 - Master LLCE spécialité Chinois
         </li>
-      </ul>
+        <li>
+          2008 - Licence LLCE spécialité Chinois
+        </li>
+        <li>
+          2004 - DEUG MIAS
+        </li>
+      </Ul>
     </div>
     <div className="section">
       <h2>Expérience</h2>
