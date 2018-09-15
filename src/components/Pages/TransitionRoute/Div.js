@@ -23,6 +23,10 @@ const Div = styled.div`
       padding-left: 0.5rem;
       margin-bottom: 0.3rem;
     }
+    @media (min-width: 764px) {
+      width: 60%;
+      margin: auto;
+    }
   }
 `;
 
