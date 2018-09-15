@@ -15,6 +15,8 @@ const app = express();
 const reactPath = [
   '/',
   '/realisations',
+  '/moi',
+  '/contact',
 ];
 
 app.use(express.static('dist'));

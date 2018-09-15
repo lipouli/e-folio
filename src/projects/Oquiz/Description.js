@@ -4,6 +4,7 @@ import Div from '~/projects/Styles/description';
 
 const Description = () => (
   <Div>
+    <p>Fait en php avec alto-router</p>
     <p>O'Quiz est une application simple de quiz.</p>
     <p>En arrivant sur la page d'accueil, les visiteurs voient la liste des quiz disponibles.</p>
     <p>Un lien leur permet également de se connecter.</p>

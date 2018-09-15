@@ -104,3 +104,6 @@ __10/09/2018__
 
 __11/09/2018__
   - Ajout animation ouverture et fermeture des projets.
+
+__15/09/2018__
+  - Installation de _@fortawesome/free-brands-svf-icons_ pour récupérer les icons de github et linkedin.
