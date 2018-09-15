@@ -8,7 +8,7 @@ const ListFormation = styled.ul`
     p {
       margin: 0.5rem;
       font-size: 0.9rem;
-      span {
+      .formation-title {
         font-style: italic;
         font-size: 1rem;
         font-weight: bold;

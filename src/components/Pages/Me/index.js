@@ -1,5 +1,6 @@
 import React from 'react';
 
+import LinkExt from '~/styles/projects/LinkExt';
 import Ul from './Ul';
 
 const Me = () => (
@@ -15,12 +16,12 @@ const Me = () => (
       <Ul>
         <li>
           2018 - Développeur web et web mobile
-          <p>Formation télé-présentiel chez O'clock de 700h sur 5 mois</p>
-          <p><span>3 mois de socle</span> : html/css/javascript/php</p>
-          <p><span>1 mois de spécialisation</span> : Spécialité choisie : React / javascript</p>
-          <p><span>1 mois de projet</span>: Click and send</p>
-          <p><span>Certification de fin de formation</span>: titre Développeur web et web mobile, Niveau III (bac +2) en cours</p>
-          <p><span>Score Opquast</span>: 925/1000 (niveau expert)</p>
+          <p>Formation télé-présentiel chez <LinkExt href="https://oclock.io/">O'clock</LinkExt> de 700h sur 5 mois</p>
+          <p><span className="formation-title">3 mois de socle</span> : html/css/javascript/php</p>
+          <p><span className="formation-title">1 mois de spécialisation</span> : Spécialité choisie : React / javascript</p>
+          <p><span className="formation-title">1 mois de projet</span>: Click and send</p>
+          <p><span className="formation-title">Certification de fin de formation</span>: titre Développeur web et web mobile, Niveau III (bac +2) en cours</p>
+          <p><span className="formation-title">Score <LinkExt href="https://www.opquast.com/">Opquast</LinkExt></span>: 925/1000 (niveau expert)</p>
         </li>
         <li>
           2017 - Auto-didacte dans le domaine du développement web: html, css, js ,php, symfony, react, mysql, node.
