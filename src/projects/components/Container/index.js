@@ -2,11 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 
+import Loading from './Loading';
+
 class Container extends React.Component {
   state = {
     __html: '',
     height: 0,
     width: 0,
+    loading: true,
   }
 
   componentDidMount() {
@@ -17,6 +20,7 @@ class Container extends React.Component {
       .then(({ data }) => {
         this.setState({
           __html: data,
+          loading: false,
         });
       });
   }
@@ -33,9 +37,15 @@ class Container extends React.Component {
   }
 
   render() {
-    const { __html, height, width } = this.state;
+    const {
+      __html,
+      height,
+      width,
+      loading,
+    } = this.state;
     const { title } = this.props;
     return (
+      loading ? <Loading /> :
       <iframe
         title={title}
         srcDoc={__html}

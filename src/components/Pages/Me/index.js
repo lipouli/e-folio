@@ -40,7 +40,7 @@ const Me = () => (
     <div className="section">
       <h2>Expérience</h2>
       <h3>2018 - Projet Clickn'Send(OpenSource)</h3>
-      <p>Pour conclure la formation chez O'clock les étudiants se sont divisé en plusieur groupe afin d'entamer des projets.</p>
+      <p>Pour conclure la formation chez O'clock les étudiants se sont divisé en plusieurs groupe afin d'entamer des projets.</p>
       <p>Notre groupe, comprenant 2 étudiants spécialisés coté back (symfony) et 2 étudiants coté front (React) ont eu la charge de développer une application pour facilité la gestion des factures des freelances.</p>
       <p>Je me suis occupée de la conception de l'architecture du front, du mariage entre les technologie react/symfony, des appels ajax.</p>
     </div>
