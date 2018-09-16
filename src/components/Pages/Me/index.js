@@ -21,7 +21,7 @@ const Me = () => (
           <p><span className="formation-title">1 mois de spécialisation</span> : Spécialité choisie : React / javascript</p>
           <p><span className="formation-title">1 mois de projet</span>: Click and send</p>
           <p><span className="formation-title">Certification de fin de formation</span>: titre Développeur web et web mobile, Niveau III (bac +2) en cours</p>
-          <p><span className="formation-title">Score <LinkExt href="https://www.opquast.com/">Opquast</LinkExt></span>: 925/1000 (niveau expert)</p>
+          <p><span className="formation-title">Score <LinkExt href="https://www.opquast.com/">Opquast</LinkExt></span>: <LinkExt href="https://certificates.opquast.com/certificate/L0FQX4/">925/1000 (niveau expert)</LinkExt></p>
         </li>
         <li>
           2017 - Auto-didacte dans le domaine du développement web: html, css, js ,php, symfony, react, mysql, node.
