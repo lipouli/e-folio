@@ -10,6 +10,7 @@ const mapStateToProps = state => ({
 
 const InfoMouseContainer = connect(
   mapStateToProps,
+  null,
 )(InfoMouse);
 
 export default InfoMouseContainer;

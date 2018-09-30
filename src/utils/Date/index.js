@@ -31,6 +31,6 @@ Date.propTypes = {
 
 Date.defaultProps = {
   className: '',
-}
+};
 
 export default Date;
