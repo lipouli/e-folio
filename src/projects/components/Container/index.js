@@ -9,20 +9,22 @@ class Container extends React.Component {
     __html: '',
     height: 0,
     width: 0,
-    loading: true,
+    loading: this.props.isExternal ? false : true,
   }
 
   componentDidMount() {
-    const { url } = this.props;
+    const { url, isExternal } = this.props;
     this.sizeIframe();
     window.addEventListener('resize', this.sizeIframe);
-    axios.get(url)
-      .then(({ data }) => {
-        this.setState({
-          __html: data,
-          loading: false,
+    if (!isExternal) {
+      axios.get(url)
+        .then(({ data }) => {
+          this.setState({
+            __html: data,
+            loading: false,
+          });
         });
-      });
+    }
   }
 
   componentWillUnmount() {
@@ -43,12 +45,19 @@ class Container extends React.Component {
       width,
       loading,
     } = this.state;
+    const { isExternal, url } = this.props;
+    const source = isExternal ? {
+      src: url,
+    } : {
+      srcDoc: __html,
+    };
+
     const { title } = this.props;
     return (
       loading ? <Loading /> :
       <iframe
         title={title}
-        srcDoc={__html}
+        {...source}
         height={`${height}px`}
         width={`${width}px`}
         allowFullScreen
@@ -60,6 +69,11 @@ class Container extends React.Component {
 Container.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  isExternal: PropTypes.bool,
+};
+
+Container.defaultProps = {
+  isExternal: false,
 };
 
 export default Container;
