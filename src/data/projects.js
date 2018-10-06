@@ -8,11 +8,11 @@ import {
 import MemoryDescription from '~/projects/Memory/Description';
 import OquizDescription from '~/projects/Oquiz/Description';
 import OblogDescription from '~/projects/Oblog/Description';
-// import ClickDescription from '~/projects/Click/Description';
+import ClickDescription from '~/projects/Click/Description';
 import OblogComponent from '~/projects/Oblog';
 import MemoryComponent from '~/projects/Memory';
 import OquizComponent from '~/projects/Oquiz';
-// import ClickComponent from '~/projects/Click';
+import ClickComponent from '~/projects/Click';
 
 const projects = [
   {
@@ -62,16 +62,16 @@ const projects = [
       ],
     },
   },
-  // {
-  //   name: 'clickNsend',
-  //   slug: 'click',
-  //   date: new Date(2018, 6, 17),
-  //   description: ClickDescription,
-  //   Component: ClickComponent,
-  //   info: {
-  //     description: 'projet de fin de formation',
-  //   },
-  // },
+  {
+    name: 'clickNsend',
+    slug: 'click',
+    date: new Date(2018, 6, 17),
+    description: ClickDescription,
+    Component: ClickComponent,
+    info: {
+      description: 'projet de fin de formation',
+    },
+  },
 ];
 
 export default projects;
